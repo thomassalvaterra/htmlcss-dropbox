@@ -139,7 +139,6 @@ ul > li{
 
 .containerPlan{
     width: calc(100% / 3);
-    display: flex;
 }
 
 h1{
