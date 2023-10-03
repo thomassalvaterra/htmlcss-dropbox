@@ -131,14 +131,28 @@ ul > li{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    border: black 1px solid;
     margin-top: 50px;
     margin-right: 20px;
 }
 
 .containerPlan{
     width: calc(100% / 3);
+    border: black 1px solid;
+    margin-right: 40px;
+}
+
+.team{
+    width: 50%;
+    margin: 0 auto;
+    border: black 1px solid;
+    margin-top: 50px;
+}
+
+.contentTeam{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
 }
 
 h1{
@@ -167,15 +181,40 @@ button{
     width: 100%;
 }
 
+.free-btn1{
+    width: 80%;
+}
+
 .dot{
     padding-right: 20px;
 }
 .single{
     text-align: center;
+    padding: 5px 0;
 }
 
 .single-content{
     padding: 16px;
+}
+
+.sinistra{
+    width: 67%;
+    margin: 30px 30px;
+}
+
+.destra{
+    width: 33%;
+}
+
+.conTm{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.size{
+    font-size: 13px;
+    padding-top: 30px;
 }
 
 .month{
@@ -213,3 +252,27 @@ button{
     color: var(--primary-color);
 }
 
+#partner{
+    width: 50%;
+}
+
+.containerSmall{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#change-img{
+    width: 90%;
+}
+
+#clear{
+    padding: 10px;
+    margin: 30px 0;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+}
