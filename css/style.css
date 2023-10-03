@@ -128,13 +128,18 @@ ul > li{
 }
 
 .plans{
-    width: calc(100% / 3);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     border: black 1px solid;
     margin-top: 50px;
     margin-right: 20px;
+}
+
+.containerPlan{
+    width: calc(100% / 3);
+    display: flex;
 }
 
 h1{
@@ -187,7 +192,7 @@ button{
     font-size: 3.5em;
 }
 
-.fa-user, .fa-folder, .fa-share-nodes{
+.fa-user, .fa-folder, .fa-share-nodes, .fa-check{
     padding-right: 5px;
 }
 
@@ -197,5 +202,15 @@ button{
     margin: 30px 0;
 }
 
+.vantaggi{
+    list-style-type: none;
+}
 
+.space{
+    padding: 16px 0;
+}
+
+.fa-check{
+    color: var(--primary-color);
+}
 
