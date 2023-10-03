@@ -1,7 +1,14 @@
+/** ELEMENTI FONDAMENTALI **/
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --navbar-height: 5rem;
+    --primary-color: rgb(51, 102, 255);
 }
 
 body{
@@ -10,9 +17,24 @@ body{
 
 header{
     width: 100%;
-    height: 80px;
+    height: var(--navbar-height);
     display: flex;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0 1px 2px #DEDEDE;
 }
+
+main{
+    padding-top: var(--navbar-height);
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+/** CONTENUTO HEADER **/
 
 .logo{
     width: 10%;
@@ -28,12 +50,19 @@ header{
     align-items: center;
 }
 
+.begin{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ul > li{
     color: black;
 }
 
 .item{
-    list-style: none;
+    list-style-type: none;
     padding: 0 16px;
 }
 
@@ -49,22 +78,17 @@ ul > li{
     color: black;
 }
 
-.begin{
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .btn{
-    background-color: rgb(51, 102, 255);
+    background-color: var(--primary-color);
     color: white;
     padding: 5px 16px;
 }
 
+/** CONTENUTO MAIN **/
+
 .jumbotron{
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-color: rgb(153, 204, 255);
     margin: 0 auto 30px auto;
 }
@@ -85,10 +109,6 @@ ul > li{
     padding: 32px 0;
 }
 
-h1{
-    font-size: 90px;
-}
-
 .bigColumn{
     width: 67%;
 }
@@ -102,35 +122,13 @@ h1{
     flex-direction: column;
 }
 
-button{
-    padding: 10px;
-    margin: 30px 0;
-    background-color: rgb(51, 102, 255);
-    color: white;
-    border: none;
-}
-
-.fa-arrow-down{
-    margin-top: 80px;
-    font-size: 3em;
-}
-
 .main-container{
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
-h2{
-    font-size: 40px;
-    margin: 20px 0 40px 0;
-}
-
-.dot{
-    padding-right: 20px;
-}
-
 .plans{
-    width: 25%;
+    width: calc(100% / 3);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -139,6 +137,35 @@ h2{
     margin-right: 20px;
 }
 
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 40px;
+    margin: 90px 0 60px 0;
+}
+
+h5{
+    padding: 10px 0;
+}
+
+button{
+    padding: 10px;
+    margin: 30px 0;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    display: inline-block;
+}
+
+.free-btn{
+    width: 100%;
+}
+
+.dot{
+    padding-right: 20px;
+}
 .single{
     text-align: center;
 }
@@ -155,8 +182,19 @@ h2{
     padding: 10px 0;
 }
 
+.fa-arrow-down{
+    margin-top: 80px;
+    font-size: 3.5em;
+}
+
 .fa-user, .fa-folder, .fa-share-nodes{
     padding-right: 5px;
+}
+
+.short{
+    width: 20%;
+    color: grey;
+    margin: 30px 0;
 }
 
 
