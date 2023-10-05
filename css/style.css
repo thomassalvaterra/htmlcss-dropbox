@@ -34,7 +34,108 @@ footer{
     color: white;
 }
 
-/** CONTENUTO HEADER **/
+/* CONTAINER */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.containerBig{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.containerBig2{
+    width: 100%;
+    background-color: rgb(204, 230, 255);
+    height: 300px;
+}
+
+.containerBig3{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.containerSmall{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerSmall2{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerSmall3{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerSmall4{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.containerSmart{
+    width: 65%;
+    padding: 50px 0;
+    display: flex;
+}
+
+/* VARI H */
+
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 40px;
+    margin: 90px 0 60px 0;
+}
+
+h2.business{
+    margin: 0;
+    font-size: 35px;
+}
+
+h5{
+    padding: 10px 0;
+}
+
+/* VARI BUTTON */
+
+button{
+    padding: 10px;
+    margin: 30px 0;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    display: inline-block;
+}
+
+.free-btn{
+    width: 100%;
+}
+
+.free-btn1{
+    width: 80%;
+}
+
+/* TOP NAVIGATION BAR */
 
 .logo{
     width: 10%;
@@ -89,7 +190,7 @@ ul > li.item{
     padding: 5px 16px;
 }
 
-/** CONTENUTO MAIN **/
+/* JUMBOTRON */
 
 .jumbotron{
     width: 100%;
@@ -102,11 +203,6 @@ ul > li.item{
     width: 65%;
     margin: 0 auto;
     padding: 50px 0;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
 }
 
 .jumbo-img{
@@ -127,6 +223,10 @@ ul > li.item{
     flex-direction: column;
 }
 
+
+
+/* PLANS SECTION */
+
 .main-container{
     width: 50%;
     margin: 0 auto;
@@ -138,61 +238,6 @@ ul > li.item{
     justify-content: space-between;
     margin-top: 50px;
     margin-right: 20px;
-}
-
-.containerPlan{
-    width: calc(100% / 3);
-    border: gray 1px solid;
-    margin-right: 40px;
-}
-
-.team{
-    width: 50%;
-    margin: 0 auto;
-    border: gray 1px solid;
-    margin-top: 50px;
-}
-
-.contentTeam{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-}
-
-h1{
-    font-size: 70px;
-}
-
-h2{
-    font-size: 40px;
-    margin: 90px 0 60px 0;
-}
-
-h2.business{
-    margin: 0;
-    font-size: 35px;
-}
-
-h5{
-    padding: 10px 0;
-}
-
-button{
-    padding: 10px;
-    margin: 30px 0;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    display: inline-block;
-}
-
-.free-btn{
-    width: 100%;
-}
-
-.free-btn1{
-    width: 80%;
 }
 
 .radio{
@@ -210,6 +255,12 @@ button{
     margin-right: 10px;
 }
 
+.containerPlan{
+    width: calc(100% / 3);
+    border: gray 1px solid;
+    margin-right: 40px;
+}
+
 .single{
     text-align: center;
     padding: 5px 0;
@@ -217,21 +268,6 @@ button{
 
 .single-content{
     padding: 16px;
-}
-
-.sinistra{
-    width: 67%;
-    margin: 30px 30px;
-}
-
-.destra{
-    width: 33%;
-}
-
-.conTm{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .size{
@@ -253,7 +289,11 @@ button{
     font-size: 3.5em;
 }
 
-.fa-user, .fa-folder, .fa-share-nodes, .fa-check{
+.fa-check{
+    color: var(--primary-color);
+}
+
+.fa-user, .fa-users, .fa-building, .fa-folder, .fa-share-nodes, .fa-check{
     padding-right: 5px;
     margin-left: 20px;
 }
@@ -272,44 +312,40 @@ button{
     padding: 16px 0;
 }
 
-.fa-check{
-    color: var(--primary-color);
-}
-
-.containerSmall{
+.team{
     width: 50%;
     margin: 0 auto;
-    margin-top: 150px;
+    border: gray 1px solid;
+    margin-top: 50px;
+}
+
+.contentTeam{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.conTm{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.containerSmall2{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 150px;
-    display: flex;
-    flex-wrap: wrap;
+.sinistra{
+    width: 67%;
+    margin: 30px 30px;
 }
 
-.containerSmall3{
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.destra{
+    width: 33%;
 }
 
-.containerSmall4{
-    width: 50%;
-    margin: 0 auto;
+a:visited.visto{
+    color: blue;
 }
 
-.containerSmart{
-    width: 65%;
-    padding: 50px 0;
-    display: flex;
-}
+/* PARTNER SECTION */
 
 .change-img{
     width: 90%;
@@ -323,6 +359,8 @@ button{
     color: black;
     border: black 1px solid;
 }
+
+/* BUSINESS FEATURE SECTION */
 
 .container-bsn{
     margin-top: 40px;
@@ -339,29 +377,8 @@ button{
 }
 
 
-a:visited.visto{
-    color: blue;
-}
 
-.containerBig{
-    width: 100%;
-    margin-top: 100px;
-}
-
-.containerBig2{
-    width: 100%;
-    background-color: rgb(204, 230, 255);
-    height: 300px;
-}
-
-.containerBig3{
-    width: 100%;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
+/* CUSTOMER SECTION */
 
 .container-cst{
     display: flex;
@@ -463,6 +480,8 @@ a:visited.visto{
     margin-top: 30px;
 }
 
+/* FREE TRIAL SECTION */
+
 #dpb{
     color: rgb(102, 0, 51);
 }
@@ -472,6 +491,16 @@ a:visited.visto{
     color: black;
     margin-left: 80px;
 }
+
+.mybss{
+    width: 67%;
+}
+
+.free-trial{
+    width: 33%;
+}
+
+/* FAQ SECTION */
 
 .faq-space{
     margin: 20px 0;
@@ -484,14 +513,7 @@ a:visited.visto{
     margin-left: 400px;
 }
 
-.list-white{
-    color: white;
-}
-
-.col{
-    width: calc(100% / 5);
-    margin: 40px 30px 0 0;
-}
+/* FOOTER SECTION */
 
 .foot-content{
     margin-bottom: 20px;
@@ -504,11 +526,27 @@ a:visited.visto{
 
 }
 
-.mybss{
-    width: 67%;
+.list-white{
+    color: white;
 }
 
-.free-trial{
-    width: 33%;
+.col{
+    width: calc(100% / 5);
+    margin: 40px 30px 0 0;
 }
 
+/* HOVER */
+
+#clear:hover{
+    background-color: black;
+    color: white;
+}
+
+#trial-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.foot-item:hover{
+    text-decoration: underline;
+}
